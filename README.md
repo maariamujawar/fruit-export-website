@@ -22,34 +22,13 @@ The **Fruit Export Website** is a simple and responsive web project designed to 
 
 ---
 
-## 📂 Project Structure
-fruit-export-website/
-│
-├── main.html          # Main homepage file (entry point)
-├── style.css         # Stylesheet for design and layout
-├── script.js         # JavaScript file (if used for interactions)
-│
-├── images/           # Folder for all images used in website
-│   ├── apple.jpg
-│   ├── mango.jpg
-│   └── ...
-|
-├── pdfs/           # Folder for all pdfs used in website
-│   ├── certificate.pdf
-│   ├── fssa.pdf
-│   └── ...
-│
-└── README.md         # Project documentation
-
-
 ## 🌐 Live Website Access
 
 You can directly view and use this website from the repository.
 
 👉 Step:
 - Open the repository on GitHub  
-- Click on the file named `main.html` this is my main file from which you can access the whole website  
-- Click **"View Raw"** or download and open it in browser    
+- Click on the file named `main.html` this is my main file from which you can access the whole website      
 
 Now you can easily access the full website locally.
 
