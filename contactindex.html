@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact|Zahi's International</title>
+
+<link rel="stylesheet" href="contactstyle.css" type="text/css">
+
+</head>
+
+<body>
+    
+
+
+    <div class="container">
+
+        <form autocomplete="off" method="post" name="google-sheet">
+
+            <h3><center>Contact Us Form</center></h3>
+            <input type="text" placeholder="Type Your Name Here.." name="name">
+            <input type="email" placeholder="Type Your Email Here.." name="email">
+            <input type="number" placeholder="Type Your Number Here.." name="mobile">
+            
+            <select name="degree">
+                <option value="Not Selected">Select Your Country</option>
+                <option value="Saudi Arabia">Saudi Arabia</option>
+                <option value="Oman">Oman</option>
+                <option value="Dammam">Dammam</option>
+                <option value="Jeddah">Jeddah</option>
+
+            </select>
+            
+            <textarea rows="4" placeholder="How we can help you?" name="message"></textarea>
+
+            <label><b>Gender</b></label>
+            <div class="gender-group">
+                <label>
+                   <input type="radio" name="gender" value="male">Male
+                </label>
+
+                <label>
+                   <input type="radio" name="gender" value="female">Female
+                </label>
+            </div>    
+            <button type="submit" name="submit">Send</button>
+             <button type="reset" class="reset">Reset</button>
+
+       
+        </form>
+
+
+    </div>
+
+    
+  
+    
+
+         <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbw7EIRa9eQQDMXcBxCZOqP1zc1Ri6sCweyYhKkw_TxPGkWE5BADiDFr-yqVFbwqSPJGpA/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+    
+</body>
+</html>
